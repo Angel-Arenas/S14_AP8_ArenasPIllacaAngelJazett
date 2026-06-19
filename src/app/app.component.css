@@ -63,6 +63,24 @@
   border-radius: 2px;
 }
 
+.btn-logout {
+  background: linear-gradient(135deg, #6c63ff, #e040a0);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+
+.btn-logout:hover {
+  opacity: 0.9;
+}
+
 main {
   min-height: calc(100vh - 128px);
 }

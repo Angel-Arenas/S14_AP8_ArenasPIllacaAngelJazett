@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" *ngIf="isLoggedIn">
   <div class="nav-container">
     <a class="brand" routerLink="/">MusicaApp</a>
     <ul class="nav-links">
@@ -7,6 +7,7 @@
       <li><a routerLink="/productos" routerLinkActive="active">Productos</a></li>
       <li><a routerLink="/contacto" routerLinkActive="active">Contacto</a></li>
     </ul>
+    <button class="btn-logout" (click)="logout()">Cerrar Sesión</button>
   </div>
 </nav>
 
