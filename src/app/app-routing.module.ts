@@ -5,6 +5,8 @@ import { ServicesComponent } from './pages/servicess/services.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AboutComponent } from './pages/about/about.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
 import { AuthGuard } from './guards/auth.guard';
 
 const routes: Routes = [
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path: 'servicios', component: ServicesComponent, canActivate: [AuthGuard] },
   { path: 'productos', component: ProductsComponent, canActivate: [AuthGuard] },
   { path: 'contacto', component: ContactComponent, canActivate: [AuthGuard] },
+  { path: 'nosotros', component: AboutComponent, canActivate: [AuthGuard] },
+  { path: 'galeria', component: GalleryComponent, canActivate: [AuthGuard] },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

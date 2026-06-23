@@ -9,6 +9,8 @@ import { ServicesComponent } from './pages/servicess/services.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { LoginComponent } from './pages/login/login.component';
+import { AboutComponent } from './pages/about/about.component';
+import { GalleryComponent } from './pages/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { LoginComponent } from './pages/login/login.component';
     ServicesComponent,
     ProductsComponent,
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    AboutComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
